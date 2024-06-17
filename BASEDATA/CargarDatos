@@ -1,0 +1,61 @@
+-- Cargar datos en la tabla persons
+INSERT INTO persons (id, dni, digito, lastname, name, cargo, estado) VALUES
+(2, 13125548, 1, 'ALVES', 'MARIELA', 18, 1),
+(3, 13125548, 1, 'PAEZ', 'SILVANA', 18, 0),
+(4, 21234786, 1, 'INFANTE', 'OMAR', 18, 1),
+(5, 43232123, 1, 'AQUINO', 'BETSABE', 18, 1),
+(6, 34234654, 1, 'BAUTISTA', 'MIGUEL', 18, 1),
+(7, 99888777, 2, 'SANTARONE', 'MARIA', 222, 1),
+(8, 30666033, 1, 'SOLORZANO', 'ALFREDO', 10, 1),
+(9, 11222333, 2, 'ALMARAZ ', 'ARIEL', 222, 1),
+(10, 12365498, 1, 'YAVARA', 'MARCELO', 23, 1),
+(11, 12365498, 1, 'VILLEGAS', 'HEBER', 23, 1),
+(12, 9875465, 1, 'RODRIGUEZ', 'PEDRO', 23, 1),
+(13, 31121582, 1, 'PAZ', 'ABEL', 910, 1),
+(14, 24568956, 1, 'AGUERO', 'LEONARDO', 910, 1),
+(1, 1000000, 0, 'ninguno', 'ninguno', 0, 0);
+
+
+-- Cargar datos en la tabla cursos
+INSERT INTO cursos (id, ano, División, Asignatura, turno, persons_id, estado) VALUES
+(1, 1, 'desarrollo', 'Prac I', 'VESPERTINO', 3, 1),
+(2, 1, 'desarrollo', 'Arquitectura', 'VESPERTINO', 3, 0),
+(3, 1, 'desarrollo', 'Comunicacion', 'VESPERTINO', 2, 1),
+(4, 1, 'desarrollo', 'Programacion I', 'VESPERTINO', 4, 1),
+(5, 1, 'desarrollo', 'Ingles', 'VESPERTINO', 7, 1),
+(6, 2, 'desarrollo', 'Practica II', 'VESPERTINO', 6, 1),
+(7, 2, 'desarrollo', 'Programacion II', 'VESPERTINO', 8, 1),
+(8, 2, 'desarrollo', 'Bases de Datos', 'VESPERTINO', 3, 1),
+(9, 2, 'desarrollo', 'Matematica Aplicada', 'VESPERTINO', 11, 1),
+(10, 2, 'desarrollo', 'Modelado de Sistema', 'VESPERTINO', 12, 1),
+(11, 3, 'desarrollo', 'Programacion III', 'VESPERTINO', 3, 1),
+(12, 3, 'desarrollo', 'Practica III', 'VESPERTINO', 12, 1),
+(13, 3, 'desarrollo', 'Valicacion', 'VESPERTINO', 13, 1),
+(14, 3, 'desarrollo', 'Etica y Deontologia', 'VESPERTINO', 14, 1),
+(15, 3, 'desarrollo', 'Interfaz', 'VESPERTINO', 6, 1),
+(16, 3, 'desarrollo', 'Redes', 'VESPERTINO', 12, 1);
+
+-- Cargar datos en la tabla horarios
+INSERT INTO horarios (id, curso_id, dia_semana, hora_inicio, hora_fin) VALUES
+(1, 1, 'LUNES', '19:30:00', '22:20:00'),
+(2, 2, 'LUNES', '22:20:00', '23:40:00'),
+(3, 3, 'MARTES', '19:30:00', '21:40:00'),
+(4, 4, 'MARTE', '21:40:00', '23:40:00'),
+(5, 4, 'JUEVES', '21:40:00', '23:40:00'),
+(6, 5, 'MIERCOLES', '21:40:00', '23:40:00'),
+(7, 6, 'LUNES', '19:30:00', '20:10:00'),
+(8, 6, 'VIERNES', '19:30:00', '22:20:00'),
+(9, 7, 'LUNES', '21:00:00', '23:40:00'),
+(10, 7, 'MIERCOLES', '21:40:00', '23:00:00'),
+(11, 8, 'MARTES', '21:40:00', '23:40:00'),
+(12, 9, 'JUEVES', '19:30:00', '21:40:00'),
+(13, 10, 'JUEVES', '21:00:00', '23:40:00'),
+(14, 11, 'MIERCOLES', '19:30:00', '21:40:00'),
+(15, 11, 'VIERNES', '20:10:00', '22:20:00'),
+(16, 12, 'LUNES', '21:40:00', '23:40:00'),
+(17, 12, 'JUEVES', '19:30:00', '21:40:00'),
+(18, 13, 'LUNES', '19:30:00', '21:40:00'),
+(19, 14, 'MIERCOLES', '21:40:00', '23:40:00'),
+(20, 15, 'JUEVES', '21:40:00', '23:40:00'),
+(21, 16, 'MARTES', '21:00:00', '23:40:00');
+
