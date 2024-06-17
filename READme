@@ -1,0 +1,12 @@
+Install de express
+https://www.npmjs.com/package/mysql#install
+npm install mysql2 express body-parser  #Complementos de then.
+
+#instalar nodemon para hacer en entorno de desarrollo
+npm install nodemon --save-dev
+
+Ejecutar con npx ejecuta modulos locales sin llamar a global.
+"En este caso, npx buscará el comando nodemon en el registro de npm y lo ejecutará sin la necesidad de instalarlo previamente."
+npx nodemon db.js
+
+npm i express-async-errors
