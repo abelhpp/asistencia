@@ -12,7 +12,7 @@ module.exports.getCursos = async () =>{
 
 module.exports.getCursosById = async (id) =>{
     const [rows] = await db.query("SELECT id, ano AS año, División, Asignatura, turno, persons_id AS docente "+ 
-               "FROM cursos WHERE id=" + id)
+               "FROM cursos WHERE estado != 0 AND id=" + id)
     return rows;
 }
 
@@ -22,7 +22,6 @@ module.exports.deleteCursosById = async (id) =>{
 
     const [rows] = await db.query("UPDATE cursos SET estado = 0 WHERE id = ? AND estado != 0;", [id]);
     return rows.affectedRows;
-
 }
 
 
